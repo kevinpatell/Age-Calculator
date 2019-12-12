@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Age in Days</title>
+  </head>
+  <body>
+    <header class="header">
+    <h1>Age Calculator</h1>
+    </header>
+    
+    <main class="main">
+      <div class="container-1">
+        <div class="flex-box-container">
+          <form> 
+            <p>Date of Birth</p>
+            <input type="date" id="dob"/></br>
+            <p>Age at the Date of</p>
+            <input type="date" id="futuredate"/>
+          </form>
+        </div>
+        
+        <div class="flex-box-container">
+          <div>
+            <button class="btn btn-primary">Calculate</button>
+          </div>
+          <div>
+            <button class="btn btn-danger">Reset</button>
+          </div>
+        </div>
+        
+        <div id="flex-box-result"></div>
+      </div>
+    </main>
+
+    <footer class="footer">
+    &copy  Just for fun!
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

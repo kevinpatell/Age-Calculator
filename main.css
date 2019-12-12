@@ -1,0 +1,54 @@
+body {
+  background: rgb(54,54,54);
+  text-align: center;
+}
+
+.header {
+  color: white;
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+.container-1 {
+  border: 1px solid black;
+  width: 75%;
+  margin: 0 auto;
+
+}
+
+p {
+    margin: 0;
+    padding: 0;
+  }
+
+input {
+  margin-bottom: 2rem;
+}
+
+.flex-box-container {
+  background-color: #bbb;
+  display: flex;
+  border: 1px solid black;
+  padding: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flex-box-container-2 {
+  display: flex;
+  background-color: #bbb;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: red;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
