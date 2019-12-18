@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const resetbtn = document.querySelector('.btn-danger');
   
   calcbtn.addEventListener('click', () => {
+
+    document.getElementById("results").innerHTML = "";
     const dob = document.getElementById('dob').value;
     const futuredate = document.getElementById('futuredate').value;
     
@@ -43,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
     h3.style.background = "rgb(261,162,60)";
     h3.style.margin = "10px 0";
     h3.style.padding = "1rem";
-    let resultBox = document.getElementById("flex-box-result");
+    let resultBox = document.getElementById("results");
     resultBox.appendChild(h3);
     resultBox.appendChild(p);
     resultBox.style.border = "1px solid black";
