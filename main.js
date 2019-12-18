@@ -18,15 +18,23 @@ document.addEventListener('DOMContentLoaded', function () {
     let minute = second * 60;
     let hour = minute * 60;
     let day = hour * 24;
+    let week = day * 7;
     let month = day * 30;
     let year = day * 365;
     
     let years = Math.round(ageInMilliseconds/year);
-    let months = Math.round(ageInMilliseconds / month);
-    let days = Math.round(ageInMilliseconds / day);
+    let months = (ageInMilliseconds/month);
+    let weeks = Math.round(ageInMilliseconds/week);
+    let days = Math.round(ageInMilliseconds/day);
     let hours = Math.round(ageInMilliseconds/hour);
     let minutes = hours * 60;
     let seconds = minutes * 60;
+
+    if (months <= 1) {
+       months = 0;
+    } else {
+      months = Math.round(ageInMilliseconds/month);
+    }
     
     let p = document.createElement('p');
     p.setAttribute('id', 'ageInDays');
@@ -34,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
     p.innerHTML = ("Age in years: "+years+ 
     "</br> Age in months: "+months+ 
     "</br> Age in Days: "+days+
+    "</br> Age in Weeks: "+weeks+
     "</br> Age in hours: "+hours+ 
     "</br> Age in minutes: "+minutes+ 
     "</br> Age in seconds: "+seconds+ 
