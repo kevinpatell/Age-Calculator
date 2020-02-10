@@ -1,4 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   background: rgb(54,54,54);
   text-align: center;
 }
@@ -8,17 +18,20 @@ body {
   margin: 2rem 0;
   font-size: 2rem;
 }
-.container-1 {
-  border: 1px solid black;
-  width: 75%;
-  margin: 0 auto;
 
+main {
+  flex: 1 0 auto;
+}
+
+.container-1 {
+  width: 50%;
+  margin: 0 auto;
 }
 
 p {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+}
 
 input {
   margin-bottom: 2rem;
@@ -27,8 +40,7 @@ input {
 .flex-box-container {
   background-color: #bbb;
   display: flex;
-  border: 1px solid black;
-  padding: 10px;
+  padding: 1rem;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
@@ -42,10 +54,12 @@ input {
   justify-content: space-around;
 }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+.push {
+  height: 50px;
+}
+
+#footer {
+  flex-shrink: 0;
   width: 100%;
   background: red;
   padding: 1rem;

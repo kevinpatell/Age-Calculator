@@ -9,25 +9,25 @@
     <title>Age Calculator</title>
     <link rel="icon" type="image/ico"
       href="https://previews.123rf.com/images/eljanstock/eljanstock1808/eljanstock180804927/107298843-abacus-vector-icon-isolated-on-transparent-background-abacus-logo-concept.jpg"/>
-
- 
-</head>
+  </head>
+  
   <body>
     <header class="header">
     <h1>Age Calculator</h1>
     </header>
-    
+
     <main class="main">
       <div class="container-1">
+        <div id="warnings"></div>
         <div class="flex-box-container">
-          <form> 
+          <form>
             <p>Date of Birth</p>
             <input type="date" id="dob"/></br>
             <p>Age at the Date of</p>
             <input type="date" id="futuredate"/>
           </form>
         </div>
-        
+
         <div class="flex-box-container">
           <div>
             <button class="btn btn-primary">Calculate</button>
@@ -36,13 +36,14 @@
             <button class="btn btn-danger">Reset</button>
           </div>
         </div>
-        
+
         <div id="results"></div>
       </div>
+      <div class="push"></div>
     </main>
 
-    <footer class="footer">
-    &copy  Just for fun!
+    <footer id="footer">
+      &copy  Just for fun!
     </footer>
     <script src="main.js"></script>
   </body>
